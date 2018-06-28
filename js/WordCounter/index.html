@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AlphaGo</title>
+    <style>
+        #AlphaGoHeader{
+            width: 940px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #bcbcbc;
+        }
+        #content {
+            width: 940px;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #bcbcbc;
+        }
+        #result{
+            width: 940px;
+            margin: 0px;
+            padding: 20px;
+            border: 1px solid #bcbcbc;
+        }
+
+    </style>
+</head>
+<body>
+<div id="AlphaGoHeader">
+
+    <h1>
+        WordCounter
+    </h1>
+
+</div>
+
+<div id="content">
+<p>
+AlphaGo is a computer program developed by Google DeepMind to play the board game Go. In October 2015, it became the first computer Go program to beat a professional human Go player without handicaps on a full-sized 19 * 19 board. In March 2016, it beat Lee Sedol during the first game in a five-game match, the first time a computer Go program has beaten a 9-dan professional without handicaps.
+</p>
+<p>
+AlphaGo's algorithm uses a combination of machine learning and tree search techniques, combined with extensive training, both from human and computer play.
+</p>
+<p>
+History and competitions
+</p>
+<p>
+Go is considered much more difficult for computers to win than other games such as chess, because its much larger branching factor makes it prohibitively difficult to use traditional AI methods such as brute-force search.
+</p>
+<p>
+Almost two decades after IBM's computer Deep Blue beat world chess champion Garry Kasparov in the 1997 match, the strongest Go programs using artificial intelligence techniques only reached about amateur 5 dan level, and still could not beat a professional Go player without handicaps. In 2012, the software program Zen, running on a four PC cluster, beat Masaki Takemiya (9p) two times at five and four stones handicap. In 2013, Crazy Stone beat Yoshio Ishida (9p) at four-stones handicap.
+</p>
+<p>
+AlphaGo represents a significant improvement over previous Go programs. In 500 games against other available Go programs, including Crazy Stone and Zen, AlphaGo running on a single computer won all but one. In a similar matchup, AlphaGo running on multiple computers won all 500 games played against other Go programs, and 77% of games played against AlphaGo running on a single computer. The distributed version was using 1,202 CPUs and 176 GPUs, about 25 times as many as the single-computer version.
+</p>
+<p>
+Match against Fan Hui<br>
+In October 2015, the distributed version of AlphaGo defeated the European Go champion Fan Hui, a 2 dan (out of 9 dan possible) professional, five to zero. This is the first time a computer Go program has beaten a professional human player on a full-sized board without handicap. The announcement of the news was delayed until 27 January 2016 to coincide with the publication of a paper in the journal Nature describing the algorithms used.
+</p>
+<p>
+Match against Lee Se-dol<br>
+Main article: AlphaGo versus Lee Se-dol<br>
+AlphaGo is scheduled to challenge South Korean professional Go player Lee Se-dol, who is ranked 9 dan, with five games taking place at the Four Seasons Hotel in Seoul, South Korea on 9, 10, 12, 13, and 15 March 2016, which will be video streamed live. Aja Huang, a DeepMind team member and amateur 6-dan Go player, will place stones on the Go board for AlphaGo, which will be running through Google's cloud computing with its servers located in the United States. The match will adopt the Chinese rules with a 7.5-point komi, and each side will have two hours of thinking time plus three 60-second byoyomi periods.
+</p>
+<p>
+The winner will get a $1M prize. If AlphaGo wins, the prize will be donated to charities, including UNICEF. Besides the $1M prize, Lee Se-dol will receive at least $150,000 for participating in all the five games and an additional $20,000 for each win.
+</p>
+<p>
+One game of the match has been played so far. AlphaGo won the first game when Lee Se-dol resigned.
+</p>
+<p>
+Algorithm<br>
+AlphaGo's algorithm uses a combination of machine learning and tree search techniques, combined with extensive training, both from human and computer play. It uses Monte Carlo tree search, guided by a "value network" and a "policy network", both implemented using deep neural network technology. A limited amount of game-specific feature detection pre-processing is used to generate the inputs to the neural networks.
+</p>
+<p>
+The system's neural networks were initially bootstrapped from human game-play expertise. AlphaGo was initially trained to mimic human play by attempting to match the moves of expert players from recorded historical games, using a database of around 30 million moves. Once it had reached a certain degree of proficiency, it was trained further by being set to play large numbers of games against other instances of itself, using reinforcement learning to improve its play.
+</p>
+<p>
+Style of play<br>
+AlphaGo has been described by the 9-dan player Myungwan Kim as playing "like a human" in its games against Fan Hui. The match referee Toby Manning has described the program's style as "conservative".
+</p>
+<p>
+Responses<br>
+AlphaGo has been hailed as a landmark development in artificial intelligence research, as Go has previously been regarded as a hard problem in machine learning that was expected to be out of reach for the technology of the time. Toby Manning, the referee of AlphaGo's match against Fan Hui, and Hajin Lee, secretary general of the International Go Federation, both reason that in the future, Go players will get help from computers to learn what they have done wrong in games and improve their skills.
+</p>
+<p>
+Similar systems<br>
+Facebook has also been working on their own Go-playing system darkforest, also based on combining machine learning and tree search. Although a strong player against other computer Go programs, as of early 2016, it had not yet defeated a professional human player.
+</p>
+<p>
+Example game<br>
+AlphaGo (black) v. Fan Hui, Game 4 (8 October 2015), AlphaGo won by resignation.
+</p>
+<p>
+Reinforcement learning is an area of machine learning inspired by behaviorist psychology, concerned with how software agents ought to take actions in an environment so as to maximize some notion of cumulative reward. The problem, due to its generality, is studied in many other disciplines, such as game theory, control theory, operations research, information theory, simulation-based optimization, multi-agent systems, swarm intelligence, statistics, and genetic algorithms. In the operations research and control literature, the field where reinforcement learning methods are studied is called approximate dynamic programming. The problem has been studied in the theory of optimal control, though most studies are concerned with the existence of optimal solutions and their characterization, and not with the learning or approximation aspects. In economics and game theory, reinforcement learning may be used to explain how equilibrium may arise under bounded rationality.
+</p>
+<p>
+In machine learning, the environment is typically formulated as a Markov decision process (MDP) as many reinforcement learning algorithms for this context utilize dynamic programming techniques. The main difference between the classical techniques and reinforcement learning algorithms is that the latter do not need knowledge about the MDP and they target large MDPs where exact methods become infeasible.
+</p>
+<p>
+Reinforcement learning differs from standard supervised learning in that correct input/output pairs are never presented, nor sub-optimal actions explicitly corrected. Further, there is a focus on on-line performance, which involves finding a balance between exploration (of uncharted territory) and exploitation (of current knowledge). The exploration vs. exploitation trade-off in reinforcement learning has been most thoroughly studied through the multi-armed bandit problem and in finite MDPs.
+</p>
+</div>
+
+
+    <script type="text/javascript" src="Main.js">
+
+    </script>
+</body>
+</html>
