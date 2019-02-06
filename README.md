@@ -1,6 +1,5 @@
 # etc   
 
-
 ## c++ vote   
 - use case diagram으로 구상한 투표시스템을 구현
 
